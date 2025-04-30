@@ -6,7 +6,7 @@ import os
 class Window:
     def __init__(self, root):
         self.root = root
-        self.root.title("Corona Banking Central Server")
+        self.root.title("Corona Banking ATM")
         self.root.configure(bg="white")
         self.center_window(self.root, 1000, 600)
         self.root.resizable(False, False)
@@ -39,12 +39,12 @@ class Window:
         self.create_popup_window()
 
         self.create_label(
-            text="Corona Banking Central Server",  # El texto a mostrar
+            text="Corona Banking ATM",  # El texto a mostrar
             row=3,  # Fila en la que estará
             column=0,  # Columna en la que estará
             columnspan=20,  # Cuántas columnas ocupará
             rowspan=1,  # Cuántas filas ocupará
-            bg="#195959",  # Color de fondo
+            bg="#3772a6",  # Color de fondo
             fg="white",  # Color de texto
             font=("Arial", 18, "bold")  # Tipo y tamaño de fuente
         )

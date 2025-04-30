@@ -20,8 +20,8 @@ def try_login():
     else:
         messagebox.showerror("Login", "User or password incorrect.")
 
-def start_server():
-    print("Start Server")
+def check_balance():
+    print("Check balance")
     main_window.withdraw ()
     start_menu_window ()
 
@@ -35,13 +35,13 @@ def start_menu_window():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
     server_app_menu.create_button(
-        text="Start Server",
-        command=start_server,  # Llama a la función try_login
+        text="Check balance",
+        command=check_balance,  # Llama a la función try_login
         row=12,
         column=8,
         columnspan=4,
@@ -80,7 +80,7 @@ def stop_server():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -124,7 +124,7 @@ def settings():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -136,7 +136,7 @@ def settings():
         column=7,
         columnspan=3,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16),
         anchor="w"
@@ -151,7 +151,7 @@ def settings():
         column=7,
         columnspan=3,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16),
         anchor="w"
@@ -200,7 +200,7 @@ def branches():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -281,7 +281,7 @@ def clients():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -350,7 +350,7 @@ def logs():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -395,14 +395,14 @@ def open_menu_window():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
 
     server_app_menu.create_button(
-        text="Start Server",
-        command=start_server,  # Llama a la función try_login
+        text="Check Balance",
+        command=check_balance,  # Llama a la función try_login
         row=9,
         column=2,
         columnspan=4,
@@ -413,7 +413,7 @@ def open_menu_window():
     )
 
     server_app_menu.create_button(
-        text="Stop Server",
+        text="Withdraw Cash",
         command=stop_server,  # Llama a la función try_login
         row=9,
         column=8,
@@ -425,7 +425,7 @@ def open_menu_window():
     )
 
     server_app_menu.create_button(
-        text="Settings",
+        text="Change PIN",
         command=settings,  # Llama a la función try_login
         row=9,
         column=14,
@@ -435,43 +435,6 @@ def open_menu_window():
         fg="#0D2626",
         font=("Arial", 14)
     )
-
-    server_app_menu.create_button (
-        text="Branches",
-        command=branches,  # Llama a la función "branches"
-        row=14,
-        column=2,
-        columnspan=4,
-        rowspan=1,
-        bg="#D9CFCC",
-        fg="#0D2626",
-        font=("Arial", 14)
-    )
-
-    server_app_menu.create_button (
-        text="Clients",
-        command=clients,  # Llama a la función "clients"
-        row=14,
-        column=8,
-        columnspan=4,
-        rowspan=1,
-        bg="#D9CFCC",
-        fg="#0D2626",
-        font=("Arial", 14)
-    )
-
-    server_app_menu.create_button (
-        text="Logs",
-        command=logs,  # Llama a la función "logs"
-        row=14,
-        column=14,
-        columnspan=4,
-        rowspan=1,
-        bg="#D9CFCC",
-        fg="#0D2626",
-        font=("Arial", 14)
-    )
-
     server_app_menu.create_button (
         text="Log Out",
         command=logout,  # Llama a la función logout
@@ -479,7 +442,7 @@ def open_menu_window():
         column=18,
         columnspan=1,
         rowspan=1,
-        bg="#BFA980",  # Color del botón
+        bg="#BFA836",  # Color del botón
         fg="#0D2626",
         font=("Arial", 14)
     )
@@ -496,7 +459,7 @@ def create_login_window():
         column=6,
         columnspan=8,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16)
     )
@@ -508,7 +471,7 @@ def create_login_window():
         column=7,
         columnspan=3,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16),
         anchor="w"
@@ -523,7 +486,7 @@ def create_login_window():
         column=7,
         columnspan=3,
         rowspan=1,
-        bg="#195959",
+        bg="#3772a6",
         fg="white",
         font=("Arial", 16),
         anchor="w"
